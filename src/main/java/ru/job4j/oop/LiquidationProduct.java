@@ -11,4 +11,4 @@ public final class  LiquidationProduct {
         return product.label();
     }
 }
-}
+
