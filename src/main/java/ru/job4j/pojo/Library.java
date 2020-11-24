@@ -28,8 +28,9 @@ public class Library {
 
         System.out.println("Print only book name Clean Code");
             for (int i = 0; i < books.length; i++) {
-                if (books[i].equals(cleanCode)) {
-                    System.out.println(books[i].getName());
+                Book bk = books[i];
+                if (bk.getName().equals("cleanCode")) {
+                    System.out.println(bk.getName());
             }
 
         }
