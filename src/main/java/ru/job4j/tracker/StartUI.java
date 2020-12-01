@@ -1,9 +1,10 @@
 package ru.job4j.tracker;
+
 public class StartUI {
 
     public static void main(String[] args) {
-        Item user = new Item(1, "Rodion");
-        System.out.println(user);
-
+   Tracker tracker = new Tracker();
+        tracker.add(new Item(1, "Gena"));
+        System.out.println(tracker.findById(1));
     }
 }
