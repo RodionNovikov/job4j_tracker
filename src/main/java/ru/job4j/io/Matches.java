@@ -20,17 +20,14 @@ public class Matches {
             System.out.println("Player: " + loop);
            }
             int select = Integer.valueOf(input.nextLine());
-        if (select != 1 && select != 2 && select != 3) {
-                System.out.println("Input correct value!");
-                nextPlayer = false;
+        if (select > 0 && select < 4) {
+            System.out.print("Matches left: ");
+            matches = matches - select;
+            System.out.println(matches);
+            nextPlayer = true;
             } else {
-                System.out.print("Matches left: ");
-                matches = matches - select;
-                System.out.println(matches);
-                nextPlayer = true;
-                if (matches <= 0) {
-                    break;
-                }
+            System.out.println("Input correct value!");
+            nextPlayer = false;
             }
         }
         System.out.println("Player " + loop + " wins!!!");
